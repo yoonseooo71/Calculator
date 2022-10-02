@@ -1,0 +1,40 @@
+button{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+.form h2 {
+    text-align: right ;
+}
+.form {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: lightgreen;
+}
+.form-key {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+.form-key div{
+    margin-bottom: 3px;
+}
+#show {
+    width: 255px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+}

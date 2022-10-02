@@ -1,0 +1,72 @@
+body {
+  margin: 0px;
+  padding:0px;
+  background-color: #073b4c;
+}
+header h1 {
+  text-align: center;
+  font-size: 3em;
+  margin:10px;
+  font-family: 'Patrick Hand', cursive;
+  color: #ef476f;
+}
+#under-line{
+  width: 100%;
+  border-bottom: 4px dashed #ef476f;
+  margin-bottom: 30px;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#calculator-body {
+  width:350px; 
+  height: 500px;
+  padding:10px;
+  background-color: #bde0fe;
+  box-sizing: border-box;
+  border:5px #a2d2ff solid;
+  border-radius:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#calculator-body div:nth-of-type(1) {
+  width:100%;
+  height:18%;
+  background-color: white; 
+  border-radius: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#calculator-body div:nth-of-type(2) {
+  width:100%;
+  height:76%;
+  background-color: white; 
+  border-radius: 20px;
+}
+
+#calculator-body div:nth-of-type(1) p {
+  margin: 10px;
+  font-size: 2em;
+}
+#calculator-body div:nth-of-type(2) > section {
+  margin: auto;
+}
+#calculator-body div:nth-of-type(2) > section > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+} 
+.num-btn {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  background-color: #ffc8dd;
+  border: 4px #ffafcc solid;
+  border-radius: 50%;
+}
