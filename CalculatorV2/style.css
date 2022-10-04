@@ -42,7 +42,7 @@ main {
   justify-content: end;
   align-items: center;
 }
-#calculator-body div:nth-of-type(2) {
+#calculator-body >div:nth-of-type(2) {
   width:100%;
   height:76%;
   background-color: white; 
@@ -53,17 +53,37 @@ main {
   margin: 10px;
   font-size: 2em;
 }
-
-
-
+#btn-grid,#btn-row1,#btn-row2,.btn-col {
+  display: flex;
+}
+#btn-row1, #btn-row2 { /*버튼 열1*/ /*버튼 열2*/
+  flex-direction: column;
+}
+#btn-grid { /*버튼 표*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .num-btn {
   width: 60px;
   height: 60px;
   background-color: #ffc8dd;
   border: 4px #ffafcc solid;
   border-radius: 50%;
+  margin: 5px;
 }
 .num-btn:hover {
   background-color: #ffc8dd8e;      
   border-color:#ffafcc80;
+}
+#equals-btn { /* = 버튼*/
+  height: 200px;
+  border-radius:30px;
+}
+#zero-btn { /* 0 버튼*/
+  width: 130px;
+  border-radius:30px;
 }
